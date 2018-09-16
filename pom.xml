@@ -23,7 +23,7 @@
     <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-testing</artifactId>
-      <version>${appengine.target.version}</version>
+      <version>1.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -138,7 +138,7 @@
             <plugin>
         <groupId>com.google.cloud.tools</groupId>
         <artifactId>appengine-maven-plugin</artifactId>
-        <version>${appengine-maven-plugin-version}</version>
+        <version>1.0</version>
       </plugin>
         </plugins>
     </build>
