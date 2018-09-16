@@ -20,7 +20,7 @@
     <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-testing</artifactId>
-      <version>1.0</version>
+      <version>1.9.64</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -55,7 +55,7 @@
      <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-api-1.0-sdk</artifactId>
-      <version>1.9.64</version>
+      <version>1</version>
     </dependency>
     <dependency>
       <groupId>com.google.truth</groupId>
@@ -112,7 +112,11 @@
                     </execution>
                 </executions>
             </plugin>
-
+        <plugin>
+        <groupId>com.google.cloud.tools</groupId>
+        <artifactId>appengine-maven-plugin</artifactId>
+        <version>1.3.2</version>
+      </plugin>
         </plugins>
     </build>
 
