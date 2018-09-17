@@ -13,8 +13,8 @@
         <title>UTS Stationery Management System</title>
     </head>
     <body>         
-        <div id="background">
-        <div id="box">
+        <div id="loginboxpadding">
+        <div id="loginbox">
         <%
             String exist = (String) session.getAttribute("existErr");
             String idErr = (String) session.getAttribute("IDErr");
@@ -22,7 +22,7 @@
         %>
         <table>
             <tr>
-                <td><img class="UTSlogo" src="images/UTS_Logo.png" alt="UTS_Logo"></td>
+                <td><img class="UTSLogoBlack" src="images/UTS_Logo_Black.png" alt="UTS_Logo"></td>
                 <td id="title">Stationery Management System</td>
             </tr>
         </table>
@@ -37,11 +37,18 @@
                 <tr><td><input type="hidden" value="submitted" name="submitted"></td>
                     <td><input class="button" type="submit" value="Login"> 
                     </td>
-                    <!--This part below is only for test purposes-->
-                <tr><td><input type="button" class="button" value="Stock" onclick="window.location.href='stockroomDashboard.jsp'"> </td></tr>
                 </tr>
             </table>
-        </form>  
+        </form> 
+       
+        <!--This part below is only for test purposes-->
+        
+        <div class="tempLoginButtons">
+            <a href="stockManagementDashboard.jsp">Stockroom Dashboard</a>
+            <br>
+            <a href="receptionistDashboard.jsp">Receptionist Dashboard</a>
+            <br>
+        </div>
         <%
             if (request.getParameter("submitted") != null) {
                 exist = idErr = passError = null;
